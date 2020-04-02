@@ -1,9 +1,8 @@
-@import "partials/variables";
-@import "partials/reset";
-@import "partials/common";
-@import "partials/navbar";
-@import "partials/main";
-@import "partials/section-1";
-@import "partials/section-2";
-@import "partials/section-3";
-@import "partials/footer";
+@import "partials/_variables";
+@import "partials/mixin";
+@import "partials/_reset";
+@import "partials/_common";
+@import "partials/_header";
+@import "partials/_main";
+@import "partials/_sections";
+@import "partials/_footer";

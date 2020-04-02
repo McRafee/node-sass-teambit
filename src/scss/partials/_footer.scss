@@ -1,0 +1,40 @@
+/* Footer */
+.footer {
+    display: flex;
+    padding: 80px 0;
+    .left {
+        width: 30%;
+        display: flex;
+        img {
+            width: 50px;
+            margin: 0 20px 0 50px;
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    .right {
+        width: 70%;
+        padding-left: 50px;
+        display: flex;
+        justify-content: space-around;
+        .menu {
+            width: 20%;
+            padding: 0 10px;
+            h4 {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    padding-top: 15px;
+                    line-height: 1.5;
+                    a:hover {
+                        color: $btn-col;
+                    }
+                }
+            }
+        }
+    }
+}

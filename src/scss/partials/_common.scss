@@ -1,0 +1,122 @@
+/* Common */
+body {
+    font-family: $primary-font;
+    color: $text-col;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $text-col;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    padding-top: 70px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 40px 0;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+small {
+    font-size: 13px;
+}
+
+.names {
+    color: $link-col;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.border {
+    border-bottom: 1px solid lightgrey;
+}
+
+.screenshot {
+    @include w100;
+}
+
+.draw {
+    height: 200px;
+}
+
+.link {
+    font-size: 20px;
+    color: $link-col;
+    &:hover {
+        color: $btn-col;
+    }
+}
+
+.sm-link:hover {
+    color: $link-col;
+}
+.sm-link:after {
+    content: "\2192";
+}
+
+.footer-link {
+    color: $link-col;
+    text-decoration: underline;
+    &:hover {
+        color: $btn-col;
+    }
+}
+
+.btn {
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid $link-col;
+    background-color: $link-col;
+    color: $primary-col;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $btn-col;
+        border: 1px solid $btn-col;
+        color: $primary-col;
+        cursor: pointer;
+    }
+    &-white {
+        @extend .btn;
+        padding: 5px 10px;
+        background-color: $primary-col;
+        color: $link-col;
+    }
+    .btn-text {
+        position: relative;
+        bottom: 3px;
+    }
+}
+
+.main-btn {
+    padding-bottom: 20px;
+    @include flex-row-center;
+    p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}

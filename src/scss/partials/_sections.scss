@@ -1,0 +1,86 @@
+/* Sections */
+.section-secondary-col {
+    background-color: $secondary-col;
+    .content {
+        width: 75%;
+        padding: 80px 0;
+        @include flex-column-center;
+        text-align: center;
+        .top {
+            width: 80%;
+        }
+        .middle {
+            display: flex;
+            .spacing {
+                @include w33;
+                padding: 50px 30px;
+                .content {
+                    @include flex-column-center;
+                    .img {
+                        @include flex-row-center;
+                        height: 150px;
+                        img {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            img {
+                padding-top: 30px;
+                height: 350px;
+            }
+            h2 {
+                padding-top: 80px;
+            }
+        }
+    }
+    .blockquote {
+        width: 50%;
+        padding: 80px 0;
+        .title {
+            text-align: center;
+            img {
+                margin-left: 5px;
+            }
+        }
+        .content {
+            width: 600px;
+            background-color: $primary-col;
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+            padding: 30px 40px;
+            margin: 50px auto;
+            position: relative;
+            i {
+                color: $link-col;
+                font-size: 40px;
+                position: absolute;
+                top: -20px;
+                left: 0;
+            }
+            p {
+                font-size: 15px;
+                padding-bottom: 30px;
+            }
+            .signature {
+                @include flex-row-left;
+                img {
+                    width: 40px;
+                    margin-right: 10px;
+                }
+                small {
+                    display: flex;
+                    font-size: 12px;
+                }
+            }
+        }
+        .main-btn {
+            justify-content: center;
+        }
+        .link {
+            text-align: center;
+        }
+    }
+}

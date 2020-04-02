@@ -1,0 +1,42 @@
+/* Header */
+.header{
+    height: 70px;
+    border-bottom: 1px solid $border;
+    @include flex-row-center;
+    justify-content: space-between;
+    background-color: $primary-col;
+    padding: 0 30px;
+    .left {
+        @include flex-row-center;
+        img {
+            margin-right: 10px;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+    .right{
+        @include flex-row-center;
+        nav {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 30px;
+                    &:first-child:after {
+                        content: "\25be";
+                        margin-left: 5px;
+                    }
+                    a {
+                        font-size: 13px;
+                        font-weight: bold;
+                        &:hover {
+                            color: $link-col;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
